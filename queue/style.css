@@ -1,0 +1,27 @@
+.content{
+    text-align: center;
+   
+}
+
+.border-queue{
+    display: flex;
+    justify-content: center;
+}
+
+
+.queue{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.elements{
+   height: 20px;
+   border: 1px solid black;
+}
+
+

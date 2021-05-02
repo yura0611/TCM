@@ -1,1 +1,1 @@
-
+In order to start a project, open file "index.html" where you will see input and two buttons(add and remove). In oder to add some elements to the queue you should enter some value to the input and then click button "add". If you want to delete any element of queue, you should click button "remove".

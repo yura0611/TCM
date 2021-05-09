@@ -1,1 +1,1 @@
-
+This program just shows random pictures of dogs and dogs breeds. In order to run the program, open 'index.html' and you will see the button Randomize and when you click on it there would be some random photo of  dog and also breed of this dog.

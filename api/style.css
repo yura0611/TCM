@@ -1,0 +1,26 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.img{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+}
+
+.results{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 400px;
+}

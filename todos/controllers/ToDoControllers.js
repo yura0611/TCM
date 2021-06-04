@@ -12,6 +12,7 @@ const options = {
 
 //get all Todos
 const getTodos = async function (req, res) {
+//   Why do you write result to data var? It is not used in this function any more.
   const data = await TodoModel.find({}, (err, toDos) => {
     if (err) {
       res.status(500).json({ er });
@@ -26,6 +27,7 @@ const getTodos = async function (req, res) {
 
 //get one todo
 const getToDo = async function (req, res, next) {
+//   Task id might be validated with Joi
   const id = await req.params.task_id;
   const data = await TodoModel.findById(id, (err, toDo) => {
     if (err) {
@@ -45,6 +47,7 @@ const getToDo = async function (req, res, next) {
 const addTodo = async function (req, res, next) {
   const { error } = await JoiModel.validate(req.body, options);
   if (error) {
+//     Code duplication with line num 73
     return next(`Validation error: ${error.details.map((x) => x.message).join(", ")}`);
   }
   const data = await TodoModel.create(req.body);

@@ -8,6 +8,8 @@ const logger = require('morgan');
 
 
 const mongoose = require('mongoose');
+// Wow, delete this creds ASAP!
+// Use .env config file for such a https://www.npmjs.com/package/dotenv
 const dev_db_url = 'mongodb+srv://user1:YuRa0611@todos.yhnva.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 const dbOptions = { useUnifiedTopology: true, useNewUrlParser: true};

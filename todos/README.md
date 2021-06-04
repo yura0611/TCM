@@ -1,4 +1,4 @@
-Sorry, I have seen that I used method "POST" instead of "PUT" to update todo
+Sorry, I have seen that I used method "POST" instead of "PUT" to update todo and to mark/unmark todo
 
 
 In order to get all todos use "GET /tasks"

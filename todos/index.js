@@ -1,10 +1,12 @@
+
+// Please remove node_modules folder from repo, it is useless. 
+
 const express = require("express");
 const bodyParser = require('body-parser')
 const TodoModel = require("./models/todo");
 
 const routes = require("./routes/ToDoRoutes");
 const logger = require('morgan');
-
 
 
 const mongoose = require('mongoose');

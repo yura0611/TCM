@@ -10,12 +10,11 @@ const MarkDone = controller.MarkDone;
 const MarkUnDone = controller.MarkUnDone;
 
 
-
-
  const routes = (app) => {
      app.route('/tasks')
-    .get(getTodos);
+    .get(controller.getTodos); // why you don't pass methods like this? It's easier and prevent code duplication)
 
+//   What about put?
      app.route('/tasks/:task_id')
     .get(getToDo)
     .post(updateTodo)
